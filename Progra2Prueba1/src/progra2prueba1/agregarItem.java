@@ -114,7 +114,6 @@ public class agregarItem extends javax.swing.JFrame {
         BlockBuster b = new BlockBuster();
         int codigoj= Integer.parseInt(jTextField2.getText());
         
-        b.agregarItem(codigoj, jTextField1.getText(), WIDTH, tipoItem);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
