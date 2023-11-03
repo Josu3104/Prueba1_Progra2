@@ -8,6 +8,7 @@ package progra2prueba1;
  *
  * @author Josue Gavidia
  */
+import javax.swing.JOptionPane;
 public class buscar extends javax.swing.JFrame {
 
     /**
@@ -100,10 +101,14 @@ public class buscar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        BlockBuster b = new BlockBuster();
+        
         int codigoj= Integer.parseInt(codigo.getText());
         
-        b.buscarItem(codigoj, tipo.getText());
+        if(Menuu.b.buscarItem(codigoj, tipo.getText())!=null){
+            JOptionPane.showMessageDialog(this,"Item encontrado!");
+        }else{
+            JOptionPane.showMessageDialog(this,"Item inexistente!");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

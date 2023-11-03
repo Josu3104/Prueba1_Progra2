@@ -15,13 +15,12 @@ public class MovieItem extends BlockBusterItem{
     public String estado;
     public String tipo;
 
-    public MovieItem(int codigo, String nombre, double precio, String type) {
-        super(codigo, nombre, precio, type);
+    public MovieItem(int codigo, String nombre, double precio) {
+        super(codigo, nombre, precio);
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
         estado = "ESTRENO";
-        tipo = type;
     }
     
     

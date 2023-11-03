@@ -8,15 +8,14 @@ import java.util.Calendar;
 public abstract class BlockBusterItem { 
      int codigo;
     String nombre;
-    double precio;
+    static double precio;
     String tipo;
     Calendar fechaDeAdicion;
 
-    public BlockBusterItem(int codigo, String nombre, double precio, String type) {
+    public BlockBusterItem(int codigo, String nombre, double precio) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
-        tipo = type;
     }
     
      public String toString(){

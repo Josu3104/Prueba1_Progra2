@@ -8,6 +8,7 @@ package progra2prueba1;
  *
  * @author Josue Gavidia
  */
+import javax.swing.JOptionPane;
 public class agregarItem extends javax.swing.JFrame {
 
     /**
@@ -111,8 +112,13 @@ public class agregarItem extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        BlockBuster b = new BlockBuster();
+        
         int codigoj= Integer.parseInt(jTextField2.getText());
+        if(Menuu.b.agregarItem(codigoj, jTextField1.getText(), jTextField3.getText())){
+            JOptionPane.showMessageDialog(this, "Item agregado!");
+        }else{
+            JOptionPane.showMessageDialog(this, "Item no se ha podido agregar!");
+        }
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

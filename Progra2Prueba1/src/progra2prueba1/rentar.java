@@ -4,6 +4,8 @@
  */
 package progra2prueba1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Josue Gavidia
@@ -111,7 +113,15 @@ public class rentar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        BlockBuster b = new BlockBuster();
+          int codigoj= Integer.parseInt(jTextField1.getText());
+          int dias= Integer.parseInt(jTextField3.getText());
+          
+        if(b.rentar(codigoj, jTextField2.getText(), dias)){
+            JOptionPane.showMessageDialog(this, BlockBuster.imprimir);
+        }else{
+            System.out.println("no se pudo!");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

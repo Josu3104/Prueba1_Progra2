@@ -15,10 +15,9 @@ public class VideoGameItem extends BlockBusterItem {
     public static final String consola3="WII";
     public String tipo;
 
-    public VideoGameItem(int codigo, String nombre, double precio, String type) {
-        super(codigo, nombre, precio, type);
+    public VideoGameItem(int codigo, String nombre, double precio) {
+        super(codigo, nombre, precio);
         renta = 30;
-        tipo = type;
     }
     @Override
     public String toString(){
